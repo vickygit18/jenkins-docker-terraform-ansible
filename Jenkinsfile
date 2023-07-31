@@ -20,7 +20,7 @@ pipeline {
       steps{
         script {
           sh "echo $USER"
-          sh "docker login -u vio1828 -p vicky@1828!"
+          sh "docker login -u vio1828 -p vicky@1828"
           sh "docker push vio1828/cicd-poc-jenkins-ansible:$BUILD_NUMBER"
           }
         }
